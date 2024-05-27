@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-c7y%za%8%husy2)jv#znvp7j&7f71u^ddwvtf88w!(h)fxvhoc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -129,6 +129,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
+    BASE_DIR / 'homeapp/static/',
 ]
 
 # Configuración para archivos multimedia (imágenes de perfil)
