@@ -31,6 +31,8 @@ urlpatterns = [
     path('blog/', include('blogapp.urls')),
     # AuthApp
     path('auth/', include('authapp.urls')),
+    # ExpensesApp
+    path('expenses/', include('expensesapp.urls')),
 ]
 
 if settings.DEBUG:

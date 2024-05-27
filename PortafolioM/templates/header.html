@@ -3,6 +3,16 @@
         <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'blog' %}">Blog</a></li>
         <li><a href="{% url 'contact' %}">Contact</a></li>
+        {% if user.is_authenticated %}
+            <li><a href="{% url 'expense_create' %}">Expense Create</a></li>
+        {% else %}
+
+        {% endif %}
+        {% if user.is_authenticated %}
+            <li><a href="{% url 'expense_list' %}">Expense List</a></li>
+        {% else %}
+
+        {% endif %}
     </ul>
     <ul class="nav justify-content-end">
         {% if user.is_authenticated %}
